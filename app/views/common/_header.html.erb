@@ -1,0 +1,110 @@
+</head>
+<body>
+  
+  <div id="wrapper">
+    <div id="scroller">
+      
+      <div id="header" class="header-wrapper">
+        <div id="top"></div>
+        <div class="header-inner-left" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="40"></div>
+        <div class="header-inner-right" data-stellar-background-ratio="2.0" data-stellar-vertical-offset="10"></div>
+        <section class="header container">
+          <div class="row">
+            <div class="span2"></div>  
+            <div class="span10 nav-fluid">  
+              
+              <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="nav-collapse collapse">
+                    <ul id="navigation" class="nav">
+                      <li class="active"><a class="level-one goto" href="#top">Home</a></li>
+                      <li><a class="level-one goto" href="#features">Skills</a></li>
+                      <li><a class="level-one goto" href="#about">About</a></li>
+                      <li><a class="level-one goto" href="#portfolio">Projects</a></li>
+                      <li><a class="level-one goto" href="#contact">Contact</a></li>
+                    </ul>
+                  </div><!--End Nav-collapse -->
+                </div><!-- End Navbar-inner -->
+              </div><!-- End Navbar -->
+              
+            </div>
+          </div>  
+          
+          <div class="row">
+            <div class="span2 brand-fluid">
+              <p class="text-center branding">
+                <%=image_tag"logo.png", :alt =>"", :class =>"flashing" %>
+                <%#=image_tag"logo.png", :alt =>"", :class =>"static" %>
+              </p>
+              <hr/>
+              <p class="lead text-center">Spreading girl programming across the web. <span class="hidden-tablet hidden-mobile">Front End and Back End Devlopment</span></p>
+              <hr/>
+              <address class="text-center">
+                <strong>Girl Butter</strong><br>
+                2071 Parkton West Dr<br>
+                Barnhart, Mo 63012<br>
+                <span class="tel-number">P: (573)705-2542</span>
+              </address>
+            </div>
+            <div class="span10">  
+              <!-- Start Carousel -->
+              <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="item active">
+                    <div class="row-fluid">
+                      <div class="span7">
+                        <div class="carousel-caption">
+                          <h1>Why <span>Girl </span> Butter</h1>
+                          <p class="lead">A brilliant female mind working to give you the best outcome possiable</p>
+                          <a class="btn btn-large btn-success goto" data-toggle="tooltip" title="Sign up to Jazzy today!" href="#signmeup">Hire me today</a>
+                        </div>
+                      </div>  
+                      <div class="span5 slide-image">  
+                        <%=image_tag"flower.png", :alt =>"" %>
+                      </div>
+                    </div>  
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="item">
+                    <div class="row-fluid">
+                      <div class="span7">
+                        <div class="carousel-caption">
+                          <h1>Who <br/>Is <span>Girl Butter?</span></h1>
+                          <p class="lead">I am not just a girl... </p>
+                          <a class="btn btn-large btn-success goto" data-toggle="tooltip" title="What's up with Jazzy?" href="#about">Learn more</a>
+                        </div>   
+                      </div>  
+                      <div class="span5 slide-image">  
+                        <%=image_tag"flower.png", :alt =>"" %>
+                      </div> 
+                    </div> 
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="item">
+                    <div class="row-fluid">
+                      <div class="span7">
+                        <div class="carousel-caption">
+                          <h1><span>Girl Butter</span> Projects</h1>
+                          <p class="lead">See what Ive worked on</p>
+                          <a class="btn btn-large btn-success goto" data-toggle="tooltip" title="Come and have a look at our work..." href="#portfolio">Browse Projects</a>
+                        </div>
+                      </div>            
+                      <div class="span5 slide-image">  
+                        <%=image_tag"flower.png", :alt =>"" %>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+              </div><!-- End Carousel -->
+            </div>
+          </div>  
+        </section><!-- End Header -->
+      </div>

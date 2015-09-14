@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if lte IE 7]> <html class="no-js ie7 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if lte IE 8]> <html class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Jazzy Theme | Jazzy Bananna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">  
+
+   
+</head>
+<body>
+  
+  <div id="wrapper">
+    <div id="scroller">
+      
+      <div id="header" class="header-wrapper">
+        
+ <div class="page-wrapper">
+    
+      <%= render :partial => "common/header" %>
+    
+      <%= yield %>
+
+      <%= render :partial => "common/skills" %>
+
+      <%= yield %>
+
+      <%= render :partial => "common/about" %>
+    
+      <%= yield %>
+
+      <%= render :partial => "common/projects" %>
+
+       <%= yield %>
+
+      <%= render :partial => "common/footer" %>
+      
+    </div>
+
+
+
+      </div>
+      <!-- End Page Modals -->    
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+
+    </div>
+  </div>       
+</body>
+</html>
