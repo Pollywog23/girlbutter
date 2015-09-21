@@ -1,0 +1,12 @@
+
+#Deploy User
+groupadd deploy
+17:51
+useradd -d /home/deploy -g deploy -m -r deploy
+sudo -u deploy -H ssh-keygen -t rsa -f /home/deploy/.ssh/id_rsa -N ''
+touch /home/deploy/.ssh/authorized_keys
+touch /home/deploy/.ssh/known_hosts
+chown -Rf deploy:deploy /home/deploy
+echo 'deploy ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA51N/HPjK411kzubbUdeWP1SjaoesTK1/Kws4ZsnLPKem7v3GSOpeG/OsFp0rKsxeR0v0fYJ6XvBydnA5Cfkh5CQBau8ToYdigCKtI+I4JxKef5/CNyUQUnGAD6c9d4YAzyId7F1wDwA9y0MeVzuOJYoscWmmmgRe8XjLF2XZ+GtmpSYhK2DYHq+JXd7QV/lAUMXg/AErdoQYJKstazbGD7aZNfDU8EbJR+mMDeW0KVqu2gLhH05q6YshSGuJaJjw6TRUynYXUvY5bADUrenVcW0/G8bTpa9St6uPNNMv8AJpiy//70PQQ+wJDKS8NgjZ3aUKPVBhIyiOswjqU0t5LQ== iouri@theablefew.com" >> /home/de
+ploy/.ssh/authorized_keys

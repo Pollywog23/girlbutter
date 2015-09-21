@@ -27,34 +27,21 @@
   <div id="wrapper">
     <div id="scroller">
       
-      <div id="header" class="header-wrapper">
-        
- <div class="page-wrapper">
-    
       <%= render :partial => "common/header" %>
-    
-      <%= yield %>
 
       <%= render :partial => "common/skills" %>
 
-      <%= yield %>
-
       <%= render :partial => "common/about" %>
-    
-      <%= yield %>
 
-      <%= render :partial => "common/projects" %>
+      <div class="portfolio-wrapper">  
+        
+        <%= render :partial => "common/projects" %>
+        <%= render :partial => "common/slides" %>
 
-       <%= yield %>
+      </div>
 
       <%= render :partial => "common/footer" %>
       
-    </div>
-
-
-
-      </div>
-      <!-- End Page Modals -->    
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
 

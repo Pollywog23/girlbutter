@@ -122,8 +122,7 @@ jQuery('a.goto').click(function() {
 
 // Set Page Slides
 
-jQuery(".feature-1, .feature-3, .first, .third, .fifth, .signup").pageslide({ speed: 600, direction: "left", modal: true });
-jQuery(".feature-2, .second, .forth, .sixth").pageslide({ speed: 600, direction: "right", modal: true });
+jQuery(".feature-1, .feature-3, .left-slide, .signup, .feature-2").pageslide({ speed: 600, direction: "left", modal: true });
 
 // Maps
 // Values 51.505, -0.09 are Lattitude / Longitude of map center - change these to where you are! 
