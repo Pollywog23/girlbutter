@@ -2,21 +2,16 @@
 lock '3.4.0'
 
 set :application, 'girlbutter'
-set :repo_url, '.'
+set :repo_url, 'https://github.com/Pollywog23/girlbutter.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/deployt/girlbutter'
+set :deploy_to, '/home/deploy/girlbutter'
 
 # Default value for :scm is :git
-set :scm, :none
-
-set :deploy_via, :copy
-
-# Require subversion to do an export instead of a checkout.
-set :checkout, "export"
+set :scm, :git
 
 # Default value for :format is :pretty
 # set :format, :pretty
