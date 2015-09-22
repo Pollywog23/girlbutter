@@ -9,7 +9,7 @@ set :repo_url, 'https://github.com/Pollywog23/girlbutter.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deploy/girlbutter'
-
+set :passenger_restart_with_touch, true
 # Default value for :scm is :git
 set :scm, :git
 
