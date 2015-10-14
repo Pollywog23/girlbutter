@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+ 
+  # mount RedactorRails::Engine => '/redactor_rails'
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,6 +9,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'public#index'
+   post 'send_mail' => 'contact#send_mail'
 
 
   # get 'index' => 'public#index'

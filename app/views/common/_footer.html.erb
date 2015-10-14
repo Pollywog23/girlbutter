@@ -2,109 +2,56 @@
   <footer class="footer container">
     <div class="container">
       <div class="row">
-        <div class="span5">
+        <div class="span12">
           <section class="footer-column-one">
             <h4 class="footer-title">Contact Me</h4>
+
             
-            <form class="form-horizontal text-left">
-              <fieldset>
-                
+            
+              
+             <%= form_tag(send_mail_path, remote: true, id: "contactForm", class: "form-horizontal text-left" ) do %>
+             <fieldset>
                 <label>Your Name</label>
                 
-                <input class="span5 contact-form" placeholder="Enter your name..." type="text">
-                
+                <input class="span12 contact-form" placeholder="Enter your name..." type="text">
+                 
                 <label>Your email address</label>
                 
-                <input class="span5 contact-form" placeholder="Enter your email..." type="text">
+                <input class="span12 contact-form" placeholder="Enter your email..." type="text">
                 
                 <label>Your phone number</label>
                 
-                <input class="span5 contact-form" placeholder="Enter your number..." type="text">
+                <input class="span12 contact-form" placeholder="Enter your number..." type="text">
                 
                 <!-- Textarea -->
                 <label>Message</label>
                 <div class="textarea">
-                  <textarea class="span5 contact-form"></textarea>
+                  <textarea class="span12 contact-form"></textarea>
                 </div>       
                 <div class="text-left">
                   <br/>
-                  <button type="submit" class="btn btn-primary btn-large">Submit</button>
+                   <%= submit_tag 'Send Message', class: "btn btn-primary btn-large" %>
                 </div>
 
                 <!-- <a href="marshasclark23@gmail.com"><i class="fa fa-envelope-o pr-10"></i>marshasclark23@gmail</a> -->
 
               </fieldset>
-            </form>
+            
+            <% end %>
           </section>
         </div>
-        <div class="span5 offset2">
-          <section class="footer-column-two">
-            
-            <h4 class="footer-title">What Other People Are Saying</h4>
-            <!-- Start Testamonials Carousel -->
-            <section id="testamonials" class="carousel testamonial slide">
-              <!-- Carousel items -->
-              <div class="carousel-inner">
-                <article class="active item">
-                  <blockquote>
-                    <i class="icon-quote-left icon-2x pull-left icon-jazzy"></i>
-                    <p>"Phasellus a metus et urna interdum vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-                    <small class="text-right">Jane Apple</small>
-                  </blockquote> 
-                </article>
-                <article class="item">
-                  <blockquote>
-                    <i class="icon-quote-left icon-2x pull-left icon-jazzy"></i>
-                    <p>"Vestibulum id ligula porta felis euismod semper. Scelerisque nisl consectetur. Phasellus a metus et urna interdum vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-                    <small class="text-right">Jimmy Coconuts</small>
-                  </blockquote> 
-                </article>
-                <article class="item">
-                  <blockquote>
-                    <i class="icon-quote-left icon-2x pull-left icon-jazzy"></i>
-                    <p>"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-                    <small class="text-right">I. Amapotato</small>
-                  </blockquote> 
-                </article>
-              </div>
-              
-              <ol class="carousel-indicators">
-                <li data-target="#testamonials" data-slide-to="0" class="active"></li>
-                <li data-target="#testamonials" data-slide-to="1"></li>
-                <li data-target="#testamonials" data-slide-to="2"></li>
-              </ol>  
-            </section>
-            <!-- End testamonials carousel --> 
-            
-            <h4 class="footer-title">Find me at these other links</h4>
-            <!-- To add Twitter feed, please refer to the README.txt -->
-            <!-- <div class="tweet"></div> -->
-           
-          </section>
-        </div>
-      </div>
-    </div>
-    
+       
+         
+     
     <div id="contact" class="footer-credits">
       <div class="container">
         <div class="row">
           <div class="span8">
             <p class="text-left pull-left">
-              &copy; 2015 Girl Butter. | All Rights Reserved
+              &copy; 2015 Girl Butter | All Rights Reserved | 
             </p>
           </div>
-          <div class="span4">
-            
-            <!-- Start Social Media Icons & Goto Top Link -->
-            <ul class="social-media-icons pull-right">
-              <li><a class="roundall" href="http://www.facebook.com/marsha.clark.9235"><i class="icon-facebook"></i></a></li>
-              <li><a class="roundall" href="http://www.skype.com"><i class="icon-skype"></i></a></li>
-              <li><a class="roundall" href="#"><i class="icon-linkedin"></i></a></li>
-              <li><a class="roundall" href="#"><i class="icon-google-plus"></i></a></li>
-              <li><a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a><a class="top-line goto" href="#top">&nbsp; Go to top</a></li>
-            </ul>
-            <!-- End Social Media Icons & Goto Top Link -->
-          </div>
+         
         </div>
       </div>
     </div>

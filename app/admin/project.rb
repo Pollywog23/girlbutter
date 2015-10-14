@@ -5,6 +5,14 @@ ActiveAdmin.register Project do
 #
   permit_params :title, :description, :published, :image
 
+   index do
+    selectable_column
+    column :title
+    column :published
+    actions
+  end
+
+
   show do
     attributes_table do
       row :title
@@ -22,9 +30,10 @@ ActiveAdmin.register Project do
   form do |f|
     f.inputs "Project" do 
       f.input :title
-      f.input :description
+      f.input :description, input_html:{class: 'redactor'}
       f.input :image, :as => :file
       f.input :published
+
     end
 
     f.actions

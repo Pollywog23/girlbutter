@@ -74,7 +74,7 @@ html {
   left: 0px;
   top: 0px;
   position: absolute;
-  background: asset-url('fruits.png') no-repeat;
+  background: asset-url('') no-repeat;
 }
 
 .content-layer {
@@ -95,7 +95,7 @@ html {
   top: 0px;
   position: absolute;
   z-index: 20;
-  background: asset-url('slice.png') no-repeat;
+  background: asset-url('') no-repeat;
 }
 
 .portfolio-layer-2 {
@@ -105,7 +105,7 @@ html {
   top: 0px;
   position: absolute;
   z-index: 20;
-  background: asset-url('slice2.png') no-repeat;
+  background: asset-url('') no-repeat;
   -webkit-transform:translate3d(0,0,0);
 }
 

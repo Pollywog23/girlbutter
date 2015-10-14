@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-
+//= require redactor-rails
 
 jQuery(document).ready(function () {
   

@@ -1,62 +1,17 @@
-<div class="slide-page" id="feature-1">
-  <div class="row-fluid">  
-    <div class="span6">
-      <h2>Here is information abouth is<span> Project</span> </h2>
-      <p class="lead">why is this not rendering?</p>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam hicula ut id elit.</p>
-      <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">Go Back</a></p>
-    </div>  
-    <div class="span6">
-      <%=image_tag "1.jpg", :alt =>"", :class =>"thumbnail" %>
-      <p><em>A websit link should goes here.</em></p> 
-    </div>
-  </div>
-</div>
 
-<!-- Feature 2 -->
-<div class="slide-page" id="feature-2">
-  <div class="row-fluid">  
-    <div class="span6">
-      <h2>There's more to<span> Jazzy</span> than meets the eye</h2>
-      <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam hicula ut id elit.</p>
-      <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">Go Back</a></p>
-    </div>  
-    <div class="span6">
-      <%=image_tag "1.jpg", :alt =>"", :class =>"thumbnail" %>
-      <p><em>A Photo: Caption goes here.</em></p> 
-    </div>
-  </div>
-</div>
-
-<!-- Feature 2 -->
-<div class="slide-page" id="feature-3">
-  <div class="row-fluid">  
-    <div class="span6">
-      <h2>There's more to<span> Jazzy</span> than meets the eye</h2>
-      <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam hicula ut id elit.</p>
-      <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">Go Back</a></p>
-    </div>  
-    <div class="span6">
-      <%=image_tag "1.jpg", :alt =>"", :class =>"thumbnail" %>
-      <p><em>A Photo: Caption goes here.</em></p> 
-    </div>
-  </div>
-</div>
 
 <!-- Page 1 -->
 <% @projects.each do |project| %>
 <div class="slide-page" id="page-<%= project.id %>">
   <div class="row-fluid">  
     <div class="span6">
-      <h2>Details about<span> <%= project.title %> project</span> and the work I did</h2>
+      <h2>Details about<span> <%= project.title %></span> and the work I did</h2>
       <p class="lead"><%= project.description %></p>
       <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">Go Back</a></p>
     </div>  
     <div class="span6">
       <%=image_tag project.image.url(:medium), :alt =>"", :class =>"thumbnail" %>
-      <p><em>I want a link to the website</em></p> 
+      <p><em><%= project.title %> </em></p> 
     </div>
   </div>
 </div>
@@ -75,7 +30,7 @@
     </div>  
     <div class="span6">
       <%=image_tag project.image.url(:medium), :alt =>"", :class =>"thumbnail" %>
-      <p><em>A Photo: Caption goes here.</em></p> 
+    
     </div>
   </div>
 </div>
