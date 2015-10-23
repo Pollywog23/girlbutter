@@ -3,7 +3,7 @@ ActiveAdmin.register Project do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-  permit_params :title, :description, :published, :image
+  permit_params :title, :description, :published, :image, :photos_attributes => [:id, :title, :image]
 
    index do
     selectable_column
@@ -16,7 +16,7 @@ ActiveAdmin.register Project do
   show do
     attributes_table do
       row :title
-      row :description
+      row :description, input_html:{class: 'redactor'}
       row :published
       row :created_at
       row :updated_at
