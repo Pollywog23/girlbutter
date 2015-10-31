@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'girlbutter'
-set :repo_url, 'https://github.com/Pollywog23/girlbutter.git'
+set :repo_url, 'git@github.com:Pollywog23/girlbutter.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
