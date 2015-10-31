@@ -13,27 +13,26 @@
              <fieldset>
                 <label>Your Name</label>
                 
-                <input class="span12 contact-form" placeholder="Enter your name..." type="text">
-                 
+                <%= text_field_tag 'name', nil, class: 'span12 contact-form', placeholder: 'Enter your name...' %>
+
                 <label>Your email address</label>
-                
-                <input class="span12 contact-form" placeholder="Enter your email..." type="text">
-                
+              
+                <%= email_field_tag 'email', nil, class: 'span12 contact-form', placeholder: 'Your Email Address' %>
+
+
                 <label>Your phone number</label>
-                
-                <input class="span12 contact-form" placeholder="Enter your number..." type="text">
-                
-                <!-- Textarea -->
-                <label>Message</label>
-                <div class="textarea">
-                  <textarea class="span12 contact-form"></textarea>
-                </div>       
+             
+                 <%= text_field_tag 'phone', nil, class: 'span12 contact-form', placeholder: 'Your Phone Number' %>
+
+                <label>Message</label>   
                 <div class="text-left">
                   <br/>
-                   <%= submit_tag 'Send Message', class: "btn btn-primary btn-large" %>
-                </div>
 
-                <!-- <a href="marshasclark23@gmail.com"><i class="fa fa-envelope-o pr-10"></i>marshasclark23@gmail</a> -->
+                  <%= text_area_tag 'message', nil, class: 'span12 contact-form', rows: 4, placeholder: 'Your Message' %>
+                   
+                  <%= submit_tag 'Send Message', class: "btn btn-primary btn-large" %>
+
+                </div>
 
               </fieldset>
             
